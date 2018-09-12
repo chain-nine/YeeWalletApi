@@ -56,25 +56,7 @@
 
 
 
-#### 查询余额
-
-* GET /api/account/balance/:currency/:uuid
-
-* Response
-
-  ```json
-  {
-      "code":0,
-      "data":{
-          "balance":0.999,
-          "currency":"btc"
-      }
-  }
-  ```
-
-  ​
-
-#### Admin转账
+#### 用户提币
 
 * POST /api/adminTransfer
 
@@ -83,7 +65,6 @@
   ```json
   {
       "uuid":"abcdefg",
-      "from_addr":"0xaaaa",
       "to_addr":"0x99999",
       "amount":0.1,
       "currency":"btc"
@@ -102,69 +83,6 @@
   ```
 
   ​
-
-  ​
-
-  ​	
-
-#### 转账
-
-* POST /api/transfer
-
-* Body
-
-  ```json
-  {
-      "uuid":"abcdefg",
-      "from_addr":"0xaaaa",
-      "to_addr":"0x99999",
-      "amount":0.1,
-      "currency":"btc"
-  }
-  ```
-
-* Response
-
-  ```json
-  {
-      "code":0,
-      "data":{
-  		"tx":"0x123123"//交易hash
-      }
-  }
-  ```
-
-
-
-#### 根钱包创建(TODO)
-
-* POST /api/wallet/root
-
-* Response
-
-  ​
-
-
-
-#### 充值回调地址设置
-
-* POST /api/rechargeCallback
-
-* Body
-
-  ```json
-  {
-      "callback_url":"http://www.callback.com/api/xx"
-  }
-  ```
-
-* Response
-
-  ```json
-  {
-      "code":0
-  }
-  ```
 
 
 
@@ -177,6 +95,7 @@
   ```json
   {
       "currency":"btc",
+      "token":"",
       "charge_amt":0.011, //充值金额
       "uuid":"xaasad",
       "from_addr":"0x0000",
