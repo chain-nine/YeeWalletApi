@@ -55,6 +55,7 @@
 
 
 
+
 #### 查询余额
 
 * GET /api/account/balance/:currency/:uuid
@@ -138,7 +139,10 @@
 #### 根钱包创建(TODO)
 
 * POST /api/wallet/root
+
 * Response
+
+  ​
 
 
 
