@@ -58,7 +58,7 @@
 
 #### 用户提币
 
-* POST /api/adminTransfer
+* POST /api/admin/withdraw
 
 * Body
 
