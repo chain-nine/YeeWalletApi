@@ -56,7 +56,7 @@
 
 
 
-#### 用户提币
+#### 管理员提币
 
 * POST /api/admin/withdraw
 
@@ -64,10 +64,10 @@
 
   ```json
   {
-      "uuid":"abcdefg",
-      "to_addr":"0x99999",
-      "amount":0.1,
-      "currency":"btc"
+  	"to_addr":"mfm1ZJiYJjieobtiTJM2EMAPRPZ9B1g2WS",
+  	"currency":"lt",
+  	"pwd":"123456",
+  	"amount":0.1
   }
   ```
 
