@@ -28,6 +28,8 @@
 
     ​
 
+* 带※的接口,没有特别说明不需要对接
+
 #### 创建钱包
 
 * Post /api/wallet
@@ -56,7 +58,36 @@
 
 
 
-#### 管理员提币
+#### ※获取钱包地址
+
+* POST /api/address
+
+* Body
+
+  ```json
+  {
+  	"uuid":"300101",
+  	"currency":"usdt",
+  	"pwd":"123456"
+  }
+  ```
+
+* Response
+
+  ```json
+  {
+      "code": 0,
+      "data": {
+          "addr": "msZ9f93Lj5UR8rTEsTUNMwXSkV8qXRgBA6"
+      }
+  }
+  ```
+
+  ​
+
+
+
+#### 提币
 
 * POST /api/admin/withdraw
 
