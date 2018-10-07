@@ -85,6 +85,36 @@
 
   ​
 
+#### 获取管理员钱包信息
+
+* GET /api/admin/balance
+
+* Response
+
+  ```json
+  {
+      "code": 0,
+      "data": {
+          "btc": [
+              {
+                  "addr": "aaaaa",
+                  "balance": 0.00000546
+              }
+          ],
+          "usdt": [
+              {
+                  "addr": "bbbb",
+                  "balance": 200
+              }
+          ]
+      }
+  }
+  ```
+
+  ​
+
+  ​
+
 
 
 #### 提币
